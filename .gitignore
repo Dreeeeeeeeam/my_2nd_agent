@@ -1,0 +1,13 @@
+# 忽略 Conda 环境文件夹
+envs/
+.conda/
+
+# 忽略 Python 缓存
+__pycache__/
+*.pyc
+
+# 忽略 IDE 配置（可选，看你是否需要同步设置）
+.idea/
+
+#忽略API配置文件
+config.py
