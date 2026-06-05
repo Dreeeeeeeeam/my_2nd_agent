@@ -36,7 +36,6 @@ class AmapWeatherSkill:
         
         参数:
         city (str): 城市名称
-        
         返回:
         str: adcode（行政区划代码），失败返回None
         """
