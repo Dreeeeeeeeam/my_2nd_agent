@@ -1,7 +1,7 @@
 """
 高德地图天气查询模块
 
-功能：根据城市名查询实时天气信息
+功能：根据城市名查询“实时”天气信息
 封装为独立函数 get_amap_data(city)
 """
 
@@ -176,12 +176,29 @@ def get_amap_data(city):
 
 # 示例用法
 if __name__ == "__main__":
-    print(get_amap_data("长沙"))
 
-    # print("=" * 50)
-    # print("高德地图天气查询工具")
-    # print("=" * 50)
-    #
+
+    print("=" * 50)
+    print("高德地图天气查询工具")
+
+
+
+    city = input("该工具可以查询实时天气，你想查询哪里的天气？\n请输入你要查询的城市:")
+    # 调用封装好的函数
+
+    weather_result = get_amap_data(city)
+    # 打印查询结果
+    print(f"城市: {weather_result['city']}")
+    print(f"温度: {weather_result['temperature']}°C")
+    print(f"天气: {weather_result['weather']}")
+    print(f"风向: {weather_result['wind_direction']}")
+    print(f"风力: {weather_result['wind_power']}")
+    print(f"湿度: {weather_result['humidity']}%")
+    print(f"更新时间: {weather_result['report_time']}")
+
+    print("查询结束")
+    print("=" * 50)
+
     # # 测试城市列表
     # test_cities = ["北京", "上海", "广州", "深圳", "杭州"]
     #
