@@ -35,7 +35,7 @@ class AmapWeatherSkill:
         内部方法：调用地理编码API获取城市的adcode
         
         参数:
-        city (str): 城市名称
+         city (str): 城市名称
         返回:
         str: adcode（行政区划代码），失败返回None
         """
